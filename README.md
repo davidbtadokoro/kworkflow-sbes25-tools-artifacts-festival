@@ -2,6 +2,54 @@
 
 ![Build Status](https://github.com/kworkflow/kworkflow/actions/workflows/unit_tests.yml/badge.svg?branch=master)
 
+# Notes for CBSoft 2025 - Artifacts Festival
+
+This repository is a modified version of the [upstream GitHub repository of kworkflow](https://github.com/kworkflow/kworkflow/) to fit the requirements for the **Available** and **Functional** badges as described in the [call for the Artifacts Festival of CBSoft 2025](https://cbsoft.sbc.org.br/2025/artefatos/?lang=en).
+
+This modified version is based on the commit `8358ca2ee84059553729` of the master branch of the upstream repository. The only divergences are:
+
+- The addition of this section to the `README.md` file
+- The related paper's PDF file was submitted to the *Tools Track* of the *39th Brazilian Symposium on Software Engineering*
+
+Below are the necessary entries to obtain the badges described in the call.
+
+### Artifact description and repository organization
+
+This artifact is a modified version (as aforementioned) of the repository containing the tool `kworkflow` (`kw`) source code, the object of the submitted paper.
+
+The files and directories relative to the root of this repository worth highlighting are:
+
+- `README.md`: README file
+- `LICENSE`: file containing the project license, the *GNU General Public License Version 2 plus* (GPL-2.0+)
+- `pre-print.pdf`: PDF file with pre-print version of the paper
+- `kw`: entry point file of the tool
+- `src`: directory with implementation of features, libraries, and plugins
+- `tests`: directory with test suites
+- `setup.sh`: installation script
+- `run_tests.sh`: entry point file to run test suites
+
+### Requirements
+
+The only absolute requirement to install and run `kw` is to have a GNU/Linux distro based on Debian, Arch, or Fedora. Technically, any distro that has `apt`, `pacman`, or `dnf` as package managers available should work.
+
+Regarding hardware requirements, `kw` does not need specific computing power to work. To run heavier commands that require kernel compilation from source code, i.e., some `kw build` commands, the faster your hardware, the better. However, this is a limitation of compiling the task of kernel compiling, not `kw` itself.
+
+### Installation and Uninstallation
+
+To install `kw`, you need to be at the root of this repository and run **one** of the following commands
+
+```
+./setup.sh --install # install kw normally
+./setup.sh --full-installation # install kw w/ dependencies for kernel building
+```
+
+To remove `kw`, you can run **one** of the following commands (also at the root of the repository)
+
+```
+./setup.sh --uninstall # uninstall kw normally
+./setup.sh --completely-remove # uninstall kw and all files under its responsibility
+```
+
 # About
 
 kw has a simple mission: reduce the setup overhead of working with the Linux
