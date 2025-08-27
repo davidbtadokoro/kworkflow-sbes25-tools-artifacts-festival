@@ -9,7 +9,7 @@ This repository is a modified version of the [upstream GitHub repository of kwor
 This modified version is based on the commit `8358ca2ee84059553729` of the master branch of the upstream repository. The only divergences are:
 
 - The addition of this section to the `README.md` file
-- The related paper's PDF file was submitted to the *Tools Track* of the *39th Brazilian Symposium on Software Engineering*
+- The related paper's pre-print PDF file that was submitted to the *Tools Track* of the *39th Brazilian Symposium on Software Engineering*
 
 Below are the necessary entries to obtain the badges described in the call.
 
@@ -21,7 +21,7 @@ The files and directories relative to the root of this repository worth highligh
 
 - `README.md`: README file
 - `LICENSE`: file containing the project license, the *GNU General Public License Version 2 plus* (GPL-2.0+)
-- `pre-print.pdf`: PDF file with pre-print version of the paper
+- `pre-print.pdf`: PDF file with pre-print version of the paper, which you can find in [this link](pre-print.pdf)
 - `kw`: entry point file of the tool
 - `src`: directory with implementation of features, libraries, and plugins
 - `tests`: directory with test suites
@@ -32,7 +32,7 @@ The files and directories relative to the root of this repository worth highligh
 
 The only absolute requirement to install and run `kw` is to have a GNU/Linux distro based on Debian, Arch, or Fedora. Technically, any distro that has `apt`, `pacman`, or `dnf` as package managers available should work.
 
-Regarding hardware requirements, `kw` does not need specific computing power to work. To run heavier commands that require kernel compilation from source code, i.e., some `kw build` commands, the faster your hardware, the better. However, this is a limitation of compiling the task of kernel compiling, not `kw` itself.
+Regarding hardware requirements, `kw` does not need specific computing power to work. To run heavier commands that require kernel compilation from source code, i.e., some `kw build` commands, the faster your hardware, the better. However, this is a limitation of the task of compiling the kernel, not `kw` itself.
 
 ### Installation and Uninstallation
 
